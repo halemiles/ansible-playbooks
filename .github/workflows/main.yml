@@ -1,7 +1,7 @@
 ---
 name: YAML Lint
 
-on:
+on:  # yamllint disable-line rule:truthy
   push:
     paths:
       - '**/*.yaml'
@@ -19,4 +19,3 @@ jobs:
         uses: ibiqlik/action-yamllint@v3
         with:
           args: .
-
