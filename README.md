@@ -8,3 +8,4 @@ Inventory and anything that could (intentionally) expose me.
 # What IS included
 
 - Server update - Updates my apt packages
+- Some cool workflows and linting
