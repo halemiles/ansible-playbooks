@@ -1,0 +1,14 @@
+---
+- name: Deploy Node Exporter Docker Container
+  hosts: elid
+  gather_facts: yes
+
+  tasks:
+    - name: Start the Node Exporter Docker container
+      docker_container:
+        name: node-exporter
+        image: prom/node-exporter
+        state: started
+        restart_policy: always
+        ports:
+          - "9100:9100"
