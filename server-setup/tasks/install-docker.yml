@@ -1,12 +1,11 @@
 ---
 - name: Ensure Docker is installed
-  shell: curl https://get.docker.com | bash -
+  ansible.builtin.shell:
+    cmd: "curl https://get.docker.com | bash -"
 
 - name: Ensure used 'miles' exists
   ansible.builtin.user:
     name: miles
     comment: Miles
     groups: docker
-    append: yes
-# - name: Ensure docker permissions applied
-#   shell: sudo usermod -aG docker miles
+    append: true

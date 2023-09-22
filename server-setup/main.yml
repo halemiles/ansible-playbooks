@@ -1,3 +1,4 @@
+---
 - name: New Linux server install
   hosts: mainpi
   tasks:
@@ -6,4 +7,3 @@
 
     # Ensure docker is installed
     - import_tasks: tasks/install-docker.yml
-      

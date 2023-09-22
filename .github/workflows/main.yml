@@ -15,7 +15,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: YAML lint
-        uses: ibiqlik/action-yamllint@v3
+      - name: Ansible Lint
+        uses: ansible/ansible-lint-action@v4
         with:
           args: .
