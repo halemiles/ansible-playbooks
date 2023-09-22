@@ -1,0 +1,16 @@
+---
+- name: Install apt packages
+  ansible.builtin.apt:
+    pkg:
+      - python3
+      - python3-pip
+      - curl
+      - bleachbit
+      - tmux
+      - zsh
+      - git
+      - nmap
+      - fail2ban
+      - ufw
+      - cifs-utils
+      - rclone

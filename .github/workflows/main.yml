@@ -15,7 +15,5 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
 
-      - name: YAML lint
-        uses: ibiqlik/action-yamllint@v3
-        with:
-          args: .
+      - name: Run ansible-lint
+        uses: ansible/ansible-lint@main # or version tag instead of 'main'
