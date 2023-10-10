@@ -5,11 +5,11 @@
 
   tasks:
     - name: Include repository list
-      include_vars:
+      ansible.legacy.include_vars:
         file: repositories.yaml
 
     - name: Push changes to repositories
-      command: git push {{ item.remote_name }} {{ item.branch }}
+      ansible.builtin.command: git push {{ item.remote_name }} {{ item.branch }}
       args:
         chdir: "{{ item.path }}"
       loop: "{{ repositories_to_push }}"

@@ -3,7 +3,7 @@
   hosts: mainpi
   tasks:
     # Install APT packages
-    - import_tasks: tasks/apt-packages.yml
+    - ansible.legacy.import_tasks: tasks/apt-packages.yml
 
     # Ensure docker is installed
-    - import_tasks: tasks/install-docker.yml
+    - ansible.legacy.import_tasks: tasks/install-docker.yml
