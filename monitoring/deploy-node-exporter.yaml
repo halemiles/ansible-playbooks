@@ -1,7 +1,7 @@
 ---
 - name: Deploy Node Exporter Docker Container
   hosts: elid
-  gather_facts: yes
+  gather_facts: true
 
   tasks:
     - name: Start the Node Exporter Docker container

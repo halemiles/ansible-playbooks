@@ -1,7 +1,7 @@
 ---
 - name: Push Changes to Gitea Repositories
   hosts: localhost
-  gather_facts: no
+  gather_facts: false
 
   tasks:
     - name: Include repository list
