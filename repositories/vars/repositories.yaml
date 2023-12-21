@@ -1,0 +1,6 @@
+# repositories.yml
+repositories_to_push:
+  - path: ~/dev/ansible-playbooks
+    remote_name: gitea
+    branch: main
+    remote_url: ssh://git@localhost/user/ansible-playbooks.git
